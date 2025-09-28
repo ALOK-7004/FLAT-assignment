@@ -1,8 +1,10 @@
 FLAT Assignment - Finite State Transducers
 A C++ implementation of various Finite State Transducers (FSTs) using the OpenFST library for text processing and transformation tasks.
 
+
+
 📁 Project Structure
-text
+
 FLAT_ASSIGNMENT/
 ├── BUILD/
 │   ├── FST_APP                 # Compiled executable
@@ -32,34 +34,34 @@ FLAT_ASSIGNMENT/
     ├── main.cpp                # Main application
     ├── string_reversal.cpp     # String reversal implementation
     └── vowel_consonant.cpp     # Vowel-consonant implementation
+
 🚀 Features
+
 Implemented FSTs:
-String Reversal FST
+1. String Reversal FST
+    Reverses input strings (e.g., "hello" → "olleh")
 
-Reverses input strings (e.g., "hello" → "olleh")
+2. Case Conversion FST
+    Converts text between cases (e.g., lowercase to uppercase)
 
-Case Conversion FST
+3. Digit-to-Word Converter FST
+    Converts digits to their word equivalents (e.g., "123" → "one two three")
 
-Converts text between cases (e.g., lowercase to uppercase)
+4. Vowel-Consonant Identifier FST
 
-Digit-to-Word Converter FST
-
-Converts digits to their word equivalents (e.g., "123" → "one two three")
-
-Vowel-Consonant Identifier FST
-
-Identifies and processes vowels and consonants in text
+    Identifies and processes vowels and consonants in text
 
 🛠️ Build Instructions
+
 Prerequisites
-C++ compiler (g++ recommended)
+1. C++ compiler (g++ recommended)
+2. OpenFST library
+3. Graphviz (for visualization)
 
-OpenFST library
 
-Graphviz (for visualization)
+
 
 Compilation
-bash
 g++ -std=c++17 -Iinclude -L/path/to/openfst/lib src/*.cpp -lfst -o build/FST_APP
 Running the Application
 bash
